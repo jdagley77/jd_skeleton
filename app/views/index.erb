@@ -6,6 +6,7 @@
 		    <li><a href="/users/new">Registration</a></li>
 		  <% else %>
 		    <li><a href="/session/logout">Logout</a></li>
+		    <li><a href="/users/<%=@user.id%>"><%=@user.email%></a></li>
 		  <% end %>
 		</ul>
  	</nav>
@@ -15,3 +16,4 @@
 <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
 </div>
+

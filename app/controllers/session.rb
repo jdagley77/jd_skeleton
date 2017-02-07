@@ -8,7 +8,7 @@ post '/session/login' do
   @user = User.authenticate(params[:user][:email],params[:user][:password])
   if @user
     login(@user)
-    redirect '/'
+    erb :index
   else
     @message = "Email or password is incorrect."
     erb :'/session/new'
