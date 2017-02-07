@@ -1,5 +1,5 @@
 header{
-	background-color: red;
+	background-color: yellow;
 	height:50px;
 }
 
@@ -19,8 +19,8 @@ nav li a{
 }
 
 nav li a:hover{
-	color:white;
-	border-bottom: 2px white solid;
+	color:red;
+	border-bottom: 2px red solid;
 }
 
 .container {
