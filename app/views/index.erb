@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+
+  <% if !current_user %>
+    <a href="/session/login">Login</a><br>
+    <a href="/users/new">Registration</a>
+  <% else %>
+    <a href="/session/logout">Logout</a>
+  <% end %>
+</div>
